@@ -1,0 +1,13 @@
+matplotlib==3.2.2
+folium==0.12.1.post1
+geopandas==0.10.2
+streamlit==1.9.0
+seaborn==0.11.2
+uszipcode==1.0.1
+pgeocode==0.3.0
+numpy==1.21.6
+streamlit_folium==0.6.15
+leafmap==0.10.5
+pydeck==0.8.0b3
+pandas==1.1.5
+plotly==5.10.0

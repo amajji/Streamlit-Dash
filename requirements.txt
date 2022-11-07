@@ -8,6 +8,6 @@ leafmap==0.10.5
 pydeck==0.8.0b3
 pandas==1.1.5
 plotly==5.10.0
-#matplotlib==3.2.2
+matplotlib==3.6.2
 folium==0.12.1.post1
 geopandas==0.10.2

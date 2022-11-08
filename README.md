@@ -1,4 +1,4 @@
-# 🔥 Streamlit Dashboard for visualizing U.S. real estate data and market trends.
+# 🔥 Streamlit Dashboard for visualizing U.S. real estate data and market trends
 Data scientist | [Anass MAJJI](https://www.linkedin.com/in/anass-majji-729773157/)
 ***
 

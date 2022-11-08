@@ -10,5 +10,13 @@ This Dashboard was developped using Streamlit. Several open-source packages are 
  <img src="streamlit.png" width="350" />
 </p>
 
-Repository Structure
-🧐 Description
+# 🚀 Repository Structure
+
+- **README.md :** The top level README for reviewers of this project.
+- **data directory :**  The folder contains the input data for purchase and refinance loans as well as the files used to geocode the adresses of granted loans. 
+- **multiapp.py :** The class multiapp is used to create many pages.
+- **requieremnent :** all requiered packages to launch the dashboard. 
+- **Others directory :** contains logos used in the readme.  
+
+# 💥 Demonstration 
+

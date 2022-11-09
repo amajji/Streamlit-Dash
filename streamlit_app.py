@@ -42,7 +42,7 @@ import pathlib
 #########################################################################################
 
 st.set_page_config(layout="wide")
-STREAMLIT_STATIC_PATH = pathlib.Path(st.__path__[0]) / "static"
+STREAMLIT_STATIC_PATH = str(pathlib.Path(st.__path__[0]) / "static")
 # We create a downloads directory within the streamlit static asset directory
 # and we write output files to it
 DOWNLOADS_PATH = STREAMLIT_STATIC_PATH / "downloads"
@@ -69,6 +69,7 @@ def sidebar_caption():
 
 @st.cache(allow_output_mutation=True)
 def read_xlsx(path):
+
     # read each excel file
     excel_file = pd.ExcelFile(path)
 
@@ -243,7 +244,7 @@ def select_null(gdf, col_name):
 #                                Main code                                              #
 #########################################################################################
 
-
+print("---------------------", str(STREAMLIT_STATIC_PATH))
 # Read DataFrame
 df_final = read_xlsx(
     STREAMLIT_STATIC_PATH + "/snap_2018.xlsx"

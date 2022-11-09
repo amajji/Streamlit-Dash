@@ -36,6 +36,7 @@ from uszipcode import SearchEngine
 from random import randint
 from multiapp import MultiApp
 import pathlib
+import xlrd
 
 #########################################################################################
 #                                Variables                                              #
@@ -49,6 +50,9 @@ STREAMLIT_STATIC_PATH = "./static"
 DOWNLOADS_PATH = STREAMLIT_STATIC_PATH + "/" + "downloads"
 #if not DOWNLOADS_PATH.is_dir():
 #    DOWNLOADS_PATH.mkdir()
+
+xlrd.xlsx.ensure_elementtree_imported(False, None)
+xlrd.xlsx.Element_has_iter = True
 
 global df_final
 global gdf

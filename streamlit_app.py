@@ -46,8 +46,8 @@ STREAMLIT_STATIC_PATH = str(pathlib.Path(st.__path__[0]) / "static")
 # We create a downloads directory within the streamlit static asset directory
 # and we write output files to it
 DOWNLOADS_PATH = STREAMLIT_STATIC_PATH + "/" + "downloads"
-if not DOWNLOADS_PATH.is_dir():
-    DOWNLOADS_PATH.mkdir()
+#if not DOWNLOADS_PATH.is_dir():
+#    DOWNLOADS_PATH.mkdir()
 
 global df_final
 global gdf

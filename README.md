@@ -20,3 +20,4 @@ This Dashboard was developped using Streamlit. Several open-source packages are 
 
 # 💥 Demonstration 
 
+You can find a deployed version of this app [here](https://amajji-streamlit-dash-streamlit-app-8i3jn9.streamlit.app/)

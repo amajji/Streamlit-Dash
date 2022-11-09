@@ -776,7 +776,7 @@ def main():
     st.sidebar.title("About")
     st.sidebar.info(
         """
-    Web App URL: <https://anasma.streamlitapp.com>
+    Web App URL: <https://amajji-streamlit-dash-streamlit-app-8i3jn9.streamlit.app/>
     GitHub repository: <https://github.com/giswqs/streamlit-geospatial>
     """
     )

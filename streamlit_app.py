@@ -221,7 +221,7 @@ def get_loan_data(scale, df_final, type_loan, column_selected):
             )
 
         gdf = gpd.read_file(
-            "/home/majji/Documents/project_github/dash/my_dash/us_zip_code/cb_2018_us_zcta510_500k.shp"
+            STREAMLIT_STATIC_PATH + "/cb_2018_us_zcta510_500k.shp"
         )
         gdf = join_attributes(gdf, df_grby_nbr_loan_IR, scale.lower())
         # gdf["count"] = gdf["count"].astype(int)
@@ -246,13 +246,13 @@ def select_null(gdf, col_name):
 
 # Read DataFrame
 df_final = read_xlsx(
-    r"./data/snap_2018.xlsx"
+    STREAMLIT_STATIC_PATH + "/snap_2018.xlsx"
 )
 
 
 # Read the geojson file
 gdf = read_file(
-    r"./data/us-state-boundaries.geojson"
+    STREAMLIT_STATIC_PATH + "/us-state-boundaries.geojson"
 )
 
 

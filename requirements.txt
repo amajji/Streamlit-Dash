@@ -11,4 +11,4 @@ plotly==5.10.0
 matplotlib==3.6.2
 folium==0.12.1.post1
 geopandas==0.10.2
-xlrd 2.0.1 
+xlrd==2.0.1 

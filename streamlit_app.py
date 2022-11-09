@@ -72,7 +72,7 @@ def sidebar_caption():
 def read_xlsx(path):
 
     # read each excel file
-    excel_file = pd.ExcelFile(path)
+    excel_file = pd.read_excel(path, sheet_name = "Purchase Data April 2018")
 
     list_columns = [
         "Down Payment Source",
@@ -83,9 +83,10 @@ def read_xlsx(path):
         "Property Zip",
         "Interest Rate",
     ]
-
+    """
     purchase_sheet_name = "Purchase Data April 2018"
     refinance_sheet_name = "Refinance Data April 2018"
+
 
     df_purshase = excel_file.parse(purchase_sheet_name)
     df_purshase = df_purshase[list_columns]
@@ -94,6 +95,8 @@ def read_xlsx(path):
     df_refinance = df_refinance[list_columns]
 
     return df_purshase.append(df_refinance)
+    """
+    return excel_file
 
 
 @st.cache
